@@ -2,6 +2,7 @@
          xmlns:xsi="http://w3.org"
          xsi:schemaLocation="http://apache.org http://apache.org">
     <modelVersion>4.0.0</modelVersion>
+    
     <groupId>com.library</groupId>
     <artifactId>LibraryManagement-Ex5</artifactId>
     <packaging>jar</packaging>
@@ -13,12 +14,20 @@
     </properties>
 
     <dependencies>
+        <!-- Spring Context for IoC Container -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
             <version>${spring.version}</version>
         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
+
     <build>
         <plugins>
             <plugin>
@@ -28,6 +37,15 @@
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
+                </configuration>
+            </plugin>
+            <!-- Exec Plugin to run App easily -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.6.3</version> <!-- Matches the version your Maven is pulling -->
+                <configuration>
+                    <mainClass>com.library.App</mainClass>
                 </configuration>
             </plugin>
         </plugins>

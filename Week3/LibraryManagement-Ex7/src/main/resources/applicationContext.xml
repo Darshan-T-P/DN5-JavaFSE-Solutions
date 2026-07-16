@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://springframework.org"
+       xmlns:xsi="http://w3.org"
+       xsi:schemaLocation="http://springframework.org
+                           http://springframework.org/spring-beans.xsd">
+
+    <!-- Define the infrastructure repository bean profile -->
+    <bean id="bookRepository" class="com.library.repository.BookRepository" />
+
+    <!-- Configuration for both Constructor and Setter Injection patterns -->
+    <bean id="bookService" class="com.library.service.BookService">
+        <!-- 1. Constructor Injection -->
+        <constructor-arg ref="bookRepository" />
+        
+        <!-- 2. Setter Injection -->
+        <property name="serviceName" value="Library-Standard-Core-Service" />
+    </bean>
+
+</beans>
