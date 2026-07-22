@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="250" viewBox="0 0 400 250">
+  <rect width="400" height="250" fill="#2c3e50"/>
+  <rect x="50" y="40" width="300" height="170" fill="#ecf0f1" rx="5"/>
+  <rect x="70" y="60" width="50" height="40" fill="#3498db"/>
+  <rect x="140" y="60" width="50" height="40" fill="#3498db"/>
+  <rect x="210" y="60" width="50" height="40" fill="#3498db"/>
+  <rect x="280" y="60" width="50" height="40" fill="#3498db"/>
+  <rect x="70" y="115" width="50" height="40" fill="#3498db"/>
+  <rect x="140" y="115" width="50" height="40" fill="#3498db"/>
+  <rect x="210" y="115" width="50" height="40" fill="#3498db"/>
+  <rect x="280" y="115" width="50" height="40" fill="#3498db"/>
+  <rect x="175" y="170" width="50" height="40" fill="#e74c3c"/>
+  <text x="200" y="230" font-family="Arial" font-size="16" fill="#ffffff" text-anchor="middle">Modern Office Building</text>
+</svg>
